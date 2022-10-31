@@ -1,3 +1,14 @@
+:root{
+--Softorange: hsl(35, 77%, 62%);
+--Softred: hsl(5, 85%, 63%);
+--Offwhite: hsl(36, 100%, 99%);
+--Grayishblue: hsl(233, 8%, 79%);
+--Darkgrayishblue: hsl(236, 13%, 42%);
+--Verydarkblue: hsl(240, 100%, 5%);
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,155 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+  margin-left: 16px;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: var(--Grayishblue);
+}
+header ul li a:hover{
+  
+  color: var(--Softorange);
+}
+
+.menu{
+  display: none;
+}
+
+.app{
+  margin: 32px;
+}
+.left-body{
+  margin-bottom: 16px;
+}
+.left-body h1{
+  font-size: 42px;
+}
+.left-body img{
+  width: 100%;
+  height: 100%;
+}
+
+.right-body{
+  background-color: var(--Verydarkblue);
+  color: var(--Offwhite);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.right-body h1{
+  color: var(--Softorange);
+}
+
+
+.item-right h3{
+  cursor: pointer;
+}
+.item-right h3:hover{
+  color: var(--Softorange);
+}
+
+.item-right p{
+  color: var(--Grayishblue);
+}
+
+
+
+button{
+  background-color: var(--Softred);
+  border:0px;
+  box-shadow: 3px 3px 8px rgb(175, 173, 173);
+  color: var(--Offwhite);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 16px 40px;
+  
+}
+
+button:hover{
+  background-color: var(--Verydarkblue);
+}
+
+.footer-item-description h1{
+  color: var(--Grayishblue);
+  margin: 0;
+  
+}
+.footer-item-description h3{
+  cursor: pointer;
+}
+.footer-item-description h3:hover{
+  color: var(--Softorange);
+}
+
+.footer-item-description p{
+  color: var(--Darkgrayishblue);
+}
+
+.footer-item img{
+  margin-right: 16px;
+  height: 160px;
+}
+.footer-item{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .app{
+    margin: 80px 150px;
+  }
+  .menu{
+    display: flex;
+  }
+
+  .menu-mobile{
+    display: none;
+  }
+  .footer{
+    display: flex;
+    margin-top: 42px;
+    gap: 10px;
+  }
+  .body-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 32px;
+    gap: 20px;
+  }
+  .left-body img{
+    width: 100%;
+    height: 300px;
+    
+  }
+  .botton-left-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+  }
+
+
 }
